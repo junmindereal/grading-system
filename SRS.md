@@ -129,41 +129,64 @@ In the case that the project is delayed, there are some requirements that could 
 
 ### 3.1 External Interfaces
 
-> This subsection defines all the inputs into and outputs requirements of the software system. Each interface defined may include the following content:
+##### Web Server
 
-- Name of item
-- Source of input or destination of output
-- Valid range, accuracy, and/or tolerance
-- Units of measure
-- Timing
-- Relationships to other inputs/outputs
-- Screen formats/organization
-- Window formats/organization
-- Data formats
-- Command formats
-- End messages
+- Node Js
+
+##### Javascript Application
+
+- The actual program that will perform the operations is written in JavaScript. All data will be stored in a database.
+
+##### MongoDB Database
+
+- It’s an open source document NoSQL database to store all data which communicates with the
+  application on the server.
 
 #### 3.1.1 User interfaces
 
-Define the software components for which a user interface is needed. Describe the logical characteristics of each interface between the software product and the users. This may include sample screen images, any GUI standards or product family style guides that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that will appear on every screen, keyboard shortcuts, error message display standards, and so on. Details of the user interface design should be documented in a separate user interface specification.
-
-Could be further divided into Usability and Convenience requirements.
+The new system shall provide a very intuitive and simple interface to the user and the administrator, so that the user can easily navigate through pages, assignments, groups and sub-groups, share data and the administrator can easily manage groups and revoke user permissions.
 
 #### 3.1.2 Hardware interfaces
 
-Describe the logical and physical characteristics of each interface between the software product and the hardware components of the system. This may include the supported device types, the nature of the data and control interactions between the software and the hardware, and communication protocols to be used.
+##### ServerSide
+
+- The web application will be hosted on a web server which is listening on the web
+  standard port, port 80.
+
+##### Client Side
+
+- Monitor screen – the software shall display information to the user via the monitor
+  screen
+- Mouse – the software shall interact with the movement of the mouse and the mouse buttons. The mouse shall activate areas for data input, command buttons and select options from menus.
+- Keyboard – the software shall interact with the keystrokes of the keyboard. The keyboard will input data into the active area of the database.
 
 #### 3.1.3 Software interfaces
 
-Describe the connections between this product and other specific software components (name and version), including databases, operating systems, tools, libraries, and integrated commercial components. Identify the data items or messages coming into the system and going out and describe the purpose of each. Describe the services needed and the nature of communications. Refer to documents that describe detailed application programming interface protocols. Identify data that will be shared across software components. If the data sharing mechanism must be implemented in a specific way (for example, use of a global data area in a multitasking operating system), specify this as an implementation constraint.
+##### Server side
+
+- A NodeJS web server will accept all requests from the client and forward it
+  accordingly. A database will be hosted centrally using MongoDB.
+
+##### Client side
+
+- An OS which is capable of running a modern web browser which supports JavaScript and HTML5.
 
 ### 3.2 Functional
 
-> This section specifies the requirements of functional effects that the software-to-be is to have on its environment.
+##### User Login
+
+|                |                                                |
+| :------------- | :--------------------------------------------- |
+| Purpose        | User logs in to system using existing profile. |
+| User           | A user with an existing profile.               |
+| Input Data     | Profile username and password.                 |
+| Output Data    | Corresponding page data.                       |
+| Invariants     | Profile table data and user information.       |
+| Pre-conditions | User is not logged in to a profile,            |
+|                | input profile exists in data base,             |
+|                | user password matches profile                  |
 
 ### 3.3 Quality of Service
-
-> This section states additional, quality-related property requirements that the functional effects of the software should present.
 
 #### 3.3.1 Performance
 
