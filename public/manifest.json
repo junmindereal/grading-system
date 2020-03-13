@@ -1,6 +1,6 @@
 {
   "short_name": "Seventy Five",
-  "name": "Seventy Five",
+  "name": "A simple online grading system",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#65D6AD",
   "background_color": "#ffffff"
 }
