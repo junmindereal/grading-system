@@ -175,7 +175,7 @@ The new system shall provide a very intuitive and simple interface to the user a
 
 ##### User Login
 
-|                |                                                |
+|                | Definition                                     |
 | :------------- | :--------------------------------------------- |
 | Purpose        | User logs in to system using existing profile. |
 | User           | A user with an existing profile.               |
