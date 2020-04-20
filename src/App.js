@@ -1,11 +1,14 @@
 import React from "react";
-import logo from "./assets/logo.svg";
+import Header from "./components/Header";
 
 function App() {
+  const styles = {
+    container: "container xl mx-auto",
+  };
+
   return (
-    <div className="bg-green-1000">
-      <h1>Hello World</h1>
-      <img src={logo} alt="logo" />
+    <div className={styles.container}>
+      <Header />
     </div>
   );
 }
